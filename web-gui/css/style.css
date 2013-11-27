@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CCS reset ends here */
+
+
+body {
+	background-color: #000;
+	color: #FFF;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 18pt;
+}
+
+.fullWidthContanainer {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+
+#timeContainer, #dateContainer, #controlsContainer, #copyrightContainer {
+	float: right;
+}
+
+#tempContainer, #controlsContainer, #statusMsg {
+	float: left;
+}
+
+#timeContainer, #dateContainer, #statusMsg, #copyrightContainer {
+	padding: 8px 10px;
+}
+
+#tempContainer {
+	float: left;
+	padding: 35px;
+	padding-left: 200px;
+	font-size: 6em;
+	background-repeat: no-repeat;
+	background-position: 40px 60px;
+}
+
+#controlsContainer {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* borders */
+.fullWidthContanainer { border-bottom: 1px solid #666; }
+#timeContainer, #dateContainer, #copyrightContainer, #controlsContainer { border-left: 1px solid #666; }
+
+#environmentContainer {
+	border-bottom: none;
+}
+
+#mainChartContainer {
+	padding-top: 30px;
+}	
+
+.controlContainer {
+	float: left;
+	clear: both;
+	margin: 5px;
+}
+
+.controlLabel, .controlBox {
+	float: left;
+	clear: both;
+	width: 150px;
+	font-size: 0.9em;
+	text-align: center;
+	margin: 2px 0px;
+}
+.controlLabel {
+	color: #999;
+}
+
+.controlBox {
+	color: #555;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: bold;
+	padding: 5px 0px;
+	text-transform: uppercase;
+}
+
+.labelContainer, .valueContainer {
+	float: left;
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+.labelContainer {
+	margin-left: 60px;
+}
+
+.chartContainer {
+	float: left;
+}
+
+.chartHeaderContainer {
+	float:left;
+	margin: 20px 0px 10px 60px;
+	font-size: 0.9em;
+}
+
+.chart {
+	float: left;
+}
+
+.xchart .axis text{
+	font-size:0.6em;
+	fill:#ffffff;
+}
+
+.zoomButtonContainer {
+	padding-top: 190px;
+	float: left;
+	font-size: 9pt;
+	_border: 1px dotted green;
+}
+
+.zoomButton {
+	margin: 10px;
+	float: left;
+	clear: both;
+}
+
+.span-container {
+	float: left;
+	clear: left;
+	text-align: center;
+	font-size: 0.7em;
+	border: 1px solid #3880AA;
+	border-radius: 4px;
+	background-color: #3880AA;
+	color: #000;
+	width: 695px;
+	margin-left: 80px;
+	margin-top: 5px;
+	padding: 1px;
+}
+
+#console {
+	resize: none;
+	border: none;
+	color: #666;
+	background-color: #000;
+	margin: 20px;
+	padding: 5px;
+	font-family: Verdana;
+	font-size: 10pt;
+}
+
+#dataTableContainer {
+	_height: 700px;
+}
+
+#loader {
+	color: #fff;
+	background: black;
+	background-image:url('/images/ajax-loader.gif');
+	opacity:0.7;
+	position: absolute;
+	left:450px;
+	top: 200px;
+	width:32px;
+	height:32px;
+}
+
+/* test only 
+#heater1Control { background-color: OrangeRed; }
+#heater2Control { background-color: #EEE; }
+#rateControl { background-color: LawnGreen; }
+#boostControl { background-color: #EEE; }
+
+div {
+	border: 0px dotted silver;
+}
+*/
